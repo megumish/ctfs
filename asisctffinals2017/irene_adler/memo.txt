@@ -1,0 +1,8 @@
+`g:info()` => Get Current game info
+`g:planetInfo()` => Get info about current planet
+`g:shipInfo()` => Get info about ships in game
+`g:jump(planetId)` => Jump to a planet
+`g:buy(resourceId, count)` => Buy count of resource at currnet market rate
+`g:sell(resourceId, count)` => Sell count of resource at current market rate
+`g:buyFuel(count)` => Buy count units of fuel
+`g:buyShip(shipId)` => Buy shipId
