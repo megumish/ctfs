@@ -1,0 +1,116 @@
+Use `help()` to get basic help
+help
+Failed to compile
+help()
+To start playing, initialize a new game:
+	`g = Game.new()`
+
+g = Game.new()
+initializing game...
+
+g:info()
+Ship: Freighter
+Money: 20000
+Fuel: 16
+Currently on: Earth
+Inventory:
+	[1] gold: 1
+	->Rare Planetary Metal, very valuable
+
+g:planetInfo()
+Current Planet Stats:
+Name: Earth
+
+Market:
+[0]	flag	@46116860184273879/unit
+[1]	gold	@50/unit
+[2]	computers	@37/unit
+[3]	soylent	@1/unit
+
+Jumps:
+[0]	Earth	CURRENT LOCATION
+[1]	Alpha Centauri	10 Parsecs Away
+[2]	Trappist 4	10 Parsecs Away
+[3]	Keppler 17	5 Parsecs Away
+
+g:jump(1)
+Jumping to 1
+Attempting a jump of 10 parsecs to Alpha Centauri
+Your trip will take 2 weeks to make...
+
+g:planetInfo()
+Current Planet Stats:
+Name: Alpha Centauri
+
+Market:
+[0]	flag	@46116860184273879/unit
+[1]	gold	@90/unit
+[2]	computers	@15/unit
+[3]	soylent	@2/unit
+
+Jumps:
+[0]	Earth	10 Parsecs Away
+[1]	Alpha Centauri	CURRENT LOCATION
+[2]	Trappist 4	20 Parsecs Away
+[3]	Keppler 17	9 Parsecs Away
+
+g:jump(-1)
+Jumping to -1
+Failed to run
+g:(jump(4)
+Failed to compile
+g:jump(4)
+Jumping to 4
+Failed to run
+g:buy(0)
+Failed to run
+g:buy(3)
+Failed to run
+g = Game.new()
+initializing game...
+
+g:buy(3)
+Failed to run
+g:planetInfo()
+Current Planet Stats:
+Name: (null)
+
+Market:
+[0]	flag	@0/unit
+[1]	gold	@0/unit
+[2]	computers	@0/unit
+[3]	soylent	@0/unit
+
+Jumps:
+[0]	Earth	10 Parsecs Away
+[1]	Alpha Centauri	0 Parsecs Away
+[2]	Trappist 4	20 Parsecs Away
+[3]	Keppler 17	9 Parsecs Away
+
+g:shipInfo()
+Ships available are:
+[0]	Freighter	OWNED
+	->Your basic, starting freighter
+[1]	Century Hawk	NOT OWNED	Availabe for 50000
+	->Fastest Ship in the Galaxy (Kessel Run, etc)
+[2]	Slug Ship	NOT OWNED	Availabe for 20000
+	->Slow, but so much storage space
+[3]	Flag Ship	NOT OWNED	Availabe for 8589934592
+	->The God-King's flag ship
+
+g:buy(0)
+Failed to run
+g:buy(0, 1)
+Buying 1 of flag
+
+g:info()
+Ship: Freighter
+Money: 20000
+Fuel: 16
+Currently on: (null)
+Inventory:
+	[0] flag: 1
+	->ASIS{gj_Y0U_oWn3d_ouR_LU4_PWN_task_!}
+
+	[1] gold: 1
+	->Rare Planetary Metal, very valuable
